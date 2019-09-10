@@ -1,0 +1,180 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{David} \headerlastnamestyle{Parker} \\
+	\vspace{2mm}
+	{\faEnvelope\ davidmparker@pm.me} | {\faMobile\ (559) 903-7877} | {\faMapMarker\ Fresno, CA} | {\faLink\ github.com/ParkerD559}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Computer Science (Minor in Biology)}
+	{California State University - Fresno}
+	{Fresno, CA}
+	{Aug 2013 – Dec 2018}
+	{GPA: 3.75 Major, 3.22 Cumulative}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{Associate Software Engineer}
+	{FocusVision}
+	{Remote/Fresno, CA}
+	{May 2018 – Present}
+	{\begin{cvitems}
+		\item {Spearheaded development of a new marketplace service designed to integrate with many external APIs}
+		\item {Collaborated with product managers, design, and quality assurance during development process}
+		\item {Resolved production issues collaboratively with site reliability engineers}
+		\item {Implemented continuous integration pipeline}
+		\item {Reviewed pull requests from members of various teams}
+		\item {Investigated and provided estimates regarding potential issues and new features}
+		\item {Identified and advocated for resolving tech debt and weakly tested areas of the system}
+		\end{cvitems}}
+	\cventry
+	{Development Intern}
+	{FocusVision}
+	{Fresno, CA}
+	{Jan 2018 – May 2018}
+	{\begin{cvitems}
+		\item {Identified and optimized a bottleneck in a critical frontend algorithm}
+		\item {Collaborated with outsourced teams in platform redesign initiative}
+		\item {Participated in a 5 member team that adhered to the scrum process framework}
+		\item {Maintained 20 year old monolithic survey software}
+		\end{cvitems}}
+	\cventry
+	{Delivery Driver}
+	{Pizza Factory}
+	{Madera, CA}
+	{Dec 2015 – May 2018}
+	{\begin{cvitems}
+		\item {Ensured customers received their correct order as quickly as possible}
+		\item {Assembled pizzas and cleaned dishes inbetween deliveries}
+		\end{cvitems}}
+	\cventry
+	{Tech Department Associate}
+	{Kennel Bookstore}
+	{Fresno, CA}
+	{June 2013 – May 2016}
+	{\begin{cvitems}
+		\item {Launched a new section of the store webiste to host information regarding new DISCOVERe program at Fresno State}
+		\item {Resolved customer technical issues and advised customers on technical products}
+		\item {Earned Apple Sales Certification requiring frequent knowledge tests}
+		\item {Updated store website promotions and online inventory photos using Adobe Photoshop and Illustrator}
+		\end{cvitems}}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Skills}
+\begin{cvskills}
+	\cvskill
+	{Languages}
+	{Python, JavaScript, HTML5/CSS3, C++, Golang, Bash}
+
+	\cvskill
+	{Frameworks}
+	{React.js, Vue.js, AngularJS, Flask, Aiohttp, Bootstrap}
+
+	\cvskill
+	{Tooling}
+	{Docker, Kubernetes, Terraform, Git, NPM, PyPI, Webpack, Babel, Cypress, Pytest}
+
+	\cvskill
+	{AWS}
+	{EC2, EKS, S3, CodeBuild, Lambda, DynamoDB, RDS, Cloudfront, Route53}
+\end{cvskills}
+
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{Desktop app featuring group chat, communal whiteboard, and shared flashcards}
+	{StudyGroup}
+	{Qt C++, PHP, TCP, Git, AWS EC2}
+	{github.com/ParkerD559/StudyGroup}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Responsive marketing website for a local bowling alley}
+	{Aqua Entertainment Website}
+	{Netlify, Gridsome, TailwindCSS}
+	{aquaent.net}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{An ASGI python websocket library}
+	{Microsockets}
+	{Python3, ASGI, PyPI, Pytest}
+	{pypi.org/project/microsockets/}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Windows service to manage window layout via hotkeys}
+	{Disperse}
+	{C++, Windows API}
+	{github.com/ParkerD559/disperse}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+
+\ 
+\end{document}
